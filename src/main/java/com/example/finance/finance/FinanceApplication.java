@@ -19,9 +19,5 @@ public class FinanceApplication {
 		return new RestTemplate();
 	}
 
-	@Bean
-	public PasswordEncoder passwordEncoder() {
-		return new BCryptPasswordEncoder(8);    // Default 10 , to make process faster used 8
-	}
 
 }

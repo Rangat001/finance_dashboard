@@ -30,8 +30,7 @@ public class AdminController {
     @PostMapping("/addUser")
     public ResponseEntity<?> addUser(@Valid @RequestBody user_dto user) {
 
-
-            if(adminService.creteUser(new userEntity(user.getName(),user.getRole(),user.getEmail(),user.getPassword()))){
+        if(adminService.creteUser(new userEntity(user.getName(),user.getRole(),user.getEmail(),user.getPassword()))){
             return new ResponseEntity<>(HttpStatus.CREATED);
         }
         return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);

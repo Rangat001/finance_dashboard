@@ -13,6 +13,7 @@ public class AnalystController {
     @Autowired
     private AnalystService analystService;
 
+    //                           insights
     @GetMapping("/dashboard")
     public ResponseEntity<AnalystDashboardDto> getDashboard(
             @RequestParam(defaultValue = "monthly") String trend
