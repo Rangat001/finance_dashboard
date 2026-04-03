@@ -1,4 +1,5 @@
 HELP.md
+
 target/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
@@ -9,10 +10,15 @@ target/
 .classpath
 .factorypath
 .project
-.properties
+*.properties
 .settings
 .springBeans
 .sts4-cache
+
+application-local.properties
+application-dev.properties
+application-prod.properties
+application-*.properties
 
 ### IntelliJ IDEA ###
 .idea
